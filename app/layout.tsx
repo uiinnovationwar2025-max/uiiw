@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Poppins, Questrial } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,11 +46,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${visby.variable} ${poppins.variable} ${questrial.variable} antialiased bg-gradient-to-r from-primary-5 to-primary-4`}
+        className={`${geistSans.variable} ${geistMono.variable} ${visby.variable} ${poppins.variable} ${questrial.variable} antialiased bg-gradient-to-r from-primary-5 to-primary-4 min-h-screen flex flex-col`}
       >
         <Navbar />
-
         {children}
+        <Footer />
       </body>
     </html>
   );
