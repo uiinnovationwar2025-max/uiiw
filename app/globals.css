@@ -23,25 +23,6 @@
   --background: linear-gradient(to right, #eceffa, #a0ddfd);
   --foreground: oklch(0.145 0 0);
 
-  --h1: 63px;
-  --h2: 48px;
-  --h3: 36px;
-  --h4: 30px;
-  --h5: 24px;
-  --h6: 20px;
-  --h7: 16px;
-  --h8: 14px;
-
-  --s1: 60px;
-  --s2: 48px;
-  --s3: 36px;
-  --s4: 30px;
-  --s5: 24px;
-  --s6: 20px;
-  --s7: 16px;
-  --s8: 14px;
-  --s9: 12px;
-
   --radius: 0.625rem;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -79,7 +60,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-primary: "Poppins", sans-serif;
+  --font-primary: var(--font-poppins);
+  --font-visby: var(--font-visby);
+  --font-questrial: var(--font-questrial);
 
   --color-primary-1: var(--primary-1);
   --color-primary-2: var(--primary-2);

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Questrial } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,24 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const visby = localFont({
+  src: "../public/fonts/visbycf-bold.otf",
+  variable: "--font-visby",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["400", "700"],
+});
+
+const questrial = Questrial({
+  subsets: ["latin"],
+  variable: "--font-questrial",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -25,8 +45,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-primary-5 to-primary-4`}
+        className={`${geistSans.variable} ${geistMono.variable} ${visby.variable} ${poppins.variable} ${questrial.variable} antialiased bg-gradient-to-r from-primary-5 to-primary-4`}
       >
+        <Navbar />
+
         {children}
       </body>
     </html>

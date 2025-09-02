@@ -18,9 +18,9 @@ const CardComponent = ({
   return (
     <Card className={cn("w-72 max-w-sm", className)}>
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className="font-visby">{title}</CardTitle>
       </CardHeader>
-      <CardDescription>{children}</CardDescription>
+      <CardDescription className="font-questrial">{children}</CardDescription>
     </Card>
   );
 };
