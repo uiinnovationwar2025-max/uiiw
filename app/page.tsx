@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <div>UIIW PROJECT</div>
+      <div className="h-screen">UIIW PROJECT</div>
     </>
   );
 }
