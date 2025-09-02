@@ -2,10 +2,12 @@
 import Image from "next/image";
 import { ChevronDown, AlignRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,8 +55,35 @@ const Navbar = () => {
             </p>
             <p className="hover:cursor-pointer">Register</p>
           </div>
-          <AlignRight className="size-7 md:hidden text-primary-1 " />
+          <AlignRight
+            onClick={() => setIsOpen(!isOpen)}
+            className="size-7 md:hidden text-primary-1 hover:cursor-pointer "
+          />
         </nav>
+      </div>
+
+      {/* Mobile View */}
+      <div
+        className={`${
+          isOpen ? "translate-y-0" : "-translate-y-full"
+        } fixed flex sm:hidden flex-col backdrop-blur-2xl transition-all duration-700 h-screen w-screen items-center justify-center z-100 gap-20`}
+      >
+        <div className="relative w-24 h-24">
+          <Image src={"/logo.png"} alt="logo" fill className="object-cover" />
+        </div>
+        <div className="text-center font-visby text-3xl text-primary-1 space-y-10">
+          <p>Home</p>
+          <p>About Us</p>
+          <p>Programs</p>
+          <p>Register</p>
+        </div>
+        <Button
+          variant={"tertiary"}
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-48 text-2xl"
+        >
+          Exit
+        </Button>
       </div>
     </>
   );
