@@ -29,7 +29,7 @@ const Hero = () => {
           <Image src={"/logo.png"} alt="Logo" fill className="object-cover" />
         </div>
         <div className="z-100 font-visby">
-          <p className="md:text-5xl text-3xl text-center text-primary-1  ">
+          <p className="md:text-5xl text-3xl text-center text-primary-1 ">
             UI INNOVATION <br /> WAR{" "}
             <span className="text-primary-3">2025</span>
           </p>
