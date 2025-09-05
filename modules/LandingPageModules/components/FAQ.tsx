@@ -8,7 +8,10 @@ import {
 const FAQ = () => {
   return (
     <>
-      <main className=" max-md:px-10 relative md:px-20 flex items-end justify-center">
+      <main className=" min-h-screen max-md:px-10 flex-col relative md:px-20 flex items-center justify-center">
+        <p className="text-primary-1 font-visby max-md:text-4xl md:text-6xl mb-10">
+          FAQ
+        </p>
         <Accordion
           type="single"
           collapsible
