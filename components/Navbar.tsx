@@ -45,7 +45,7 @@ const Navbar = () => {
             </p>
           </div>
           <div className="flex max-md:hidden flex-row font-semibold text-md font-visby gap-10 text-primary-1">
-            <p className="hover:cursor-pointer">Home</p>
+            <p className="hover:cursor-pointer ">Home</p>
             <p className="hover:cursor-pointer">About Us</p>
             <p className="flex items-center gap-2 hover:cursor-pointer">
               Programs{" "}
