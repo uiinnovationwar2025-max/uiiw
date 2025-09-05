@@ -38,7 +38,7 @@ const Hero = () => {
             <span className="text-primary-2">EvolvingStrategy</span>
           </p>
         </div>
-        <p className="text-s9 px-10 md:px-0 md:text-s7 text-secondary-2">
+        <p className="font-primary font-semibold max-md:text-md md:text-lg px-10 md:px-0 md:text-s7 text-secondary-2">
           Optimizing Intelligence Diversity in Enhancing Adaptive Strategy for
           Business Management and Operation
         </p>
