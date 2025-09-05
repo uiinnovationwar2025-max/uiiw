@@ -28,12 +28,12 @@ const Hero = () => {
         <div className="relative max-md:w-44 max-md:h-44 w-60 h-60 ">
           <Image src={"/logo.png"} alt="Logo" fill className="object-cover" />
         </div>
-        <div className="z-100">
-          <p className="text-h4 md:text-sm text-center text-primary-1">
+        <div className="z-100 font-visby">
+          <p className="md:text-5xl text-3xl text-center text-primary-1  ">
             UI INNOVATION <br /> WAR{" "}
             <span className="text-primary-3">2025</span>
           </p>
-          <p className="text-h7 md:text-h4 text-primary-1">
+          <p className="md:text-3xl text-xl text-primary-1">
             <span className="font-primary">#</span>
             EmpoweringMinds
             <span className="text-primary-2">EvolvingStrategy</span>
