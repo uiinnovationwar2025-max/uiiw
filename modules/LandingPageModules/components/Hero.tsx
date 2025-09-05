@@ -5,7 +5,7 @@ import { ArrowUpRight, FileText } from "lucide-react";
 const Hero = () => {
   return (
     <>
-      <main className="relative flex gap-12 flex-col min-h-screen text-center items-center justify-center overflow-x-hidden">
+      <main className="relative flex gap-12 flex-col min-h-screen  text-center items-center justify-center overflow-hidden">
         {/* Desktop Object */}
         <div className="absolute -top-24 hidden lg:block -left-14 w-5xl mx-auto max-w-screen h-[72rem] ">
           <Image src={"/hero/object-1.svg"} alt="object" fill />
@@ -20,8 +20,9 @@ const Hero = () => {
           <Image src={"/hero/object-3.svg"} alt="object" fill />
         </div>
 
-        <div className="absolute -bottom-64  block lg:hidden w-full mx-auto max-w-screen h-[36rem] ">
-          <Image src={"/hero/object-4.svg"} alt="object" fill className="" />
+        {/* TODO: Bisa disambung sama our programs */}
+        <div className="absolute -bottom-64 -z-40 block lg:hidden w-full mx-auto max-w-5xl h-[36rem] ">
+          <Image src={"/hero/object-4.svg"} alt="object" fill />
         </div>
 
         <div className="relative max-md:w-44 max-md:h-44 w-60 h-60 ">

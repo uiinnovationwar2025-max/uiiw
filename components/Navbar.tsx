@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full flex items-center justify-center px-10 py-8 z-50 transition-all duration-500 delay-300 ${
+        className={`fixed top-0 left-0 w-full flex items-center z-[9999] justify-center px-10 py-8  transition-all duration-500 delay-300 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
