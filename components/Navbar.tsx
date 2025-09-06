@@ -1,10 +1,34 @@
+"use client";
 import Image from "next/image";
 import { ChevronDown, AlignRight } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
     <>
-      <div className="relative flex items-center justify-center px-10 py-8">
+      <div
+        className={`fixed top-0 left-0 w-full flex items-center justify-center px-10 py-8 z-50 transition-all duration-500 delay-300 ${
+          isVisible ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
         <nav className="flex flex-wrap w-7xl bg-gradient-to-b from-primary-5 to-primary-4 items-center justify-between max-md:border-2 border-3 border-primary-1 rounded-full max-md:px-8 px-12 py-2">
           <div className="flex flex-wrap items-center gap-3">
             <div className="relative max-md:w-8 max-md:h-8 w-14 h-14">
@@ -21,18 +45,45 @@ const Navbar = () => {
             </p>
           </div>
           <div className="flex max-md:hidden flex-row font-semibold text-md font-visby gap-10 text-primary-1">
-            <p>Home</p>
-            <p>About Us</p>
-            <p className="flex items-center gap-2">
+            <p className="hover:cursor-pointer">Home</p>
+            <p className="hover:cursor-pointer">About Us</p>
+            <p className="flex items-center gap-2 hover:cursor-pointer">
               Programs{" "}
               <span>
                 <ChevronDown />
               </span>
             </p>
-            <p>Register</p>
+            <p className="hover:cursor-pointer">Register</p>
           </div>
-          <AlignRight className="size-7 md:hidden text-primary-1" />
+          <AlignRight
+            onClick={() => setIsOpen(!isOpen)}
+            className="size-7 md:hidden text-primary-1 hover:cursor-pointer "
+          />
         </nav>
+      </div>
+
+      {/* Mobile View */}
+      <div
+        className={`${
+          isOpen ? "translate-y-0" : "-translate-y-full"
+        } fixed flex sm:hidden flex-col backdrop-blur-2xl transition-all duration-700 h-screen w-screen items-center justify-center z-100 gap-20`}
+      >
+        <div className="relative w-24 h-24">
+          <Image src={"/logo.png"} alt="logo" fill className="object-cover" />
+        </div>
+        <div className="text-center font-visby text-3xl text-primary-1 space-y-10">
+          <p>Home</p>
+          <p>About Us</p>
+          <p>Programs</p>
+          <p>Register</p>
+        </div>
+        <Button
+          variant={"tertiary"}
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-48 text-2xl"
+        >
+          Exit
+        </Button>
       </div>
     </>
   );
