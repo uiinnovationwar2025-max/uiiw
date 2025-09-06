@@ -22,10 +22,22 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full flex items-center justify-center px-10 py-8 z-50 transition-all duration-500 delay-300 ${
+        className={`fixed top-0 left-0 w-full flex items-center z-[999] justify-center px-10 py-8  transition-all duration-500 delay-300 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
@@ -39,7 +51,7 @@ const Navbar = () => {
                 className="object-cover"
               />
             </div>
-            <p className="font-visby font-bold max-md:text-sm text-md text-primary-1">
+            <p className="font-visby font-bold max-md:text-sm text-lg text-primary-1">
               UI <br className="max-md:hidden" /> INNOVATION <br /> WAR{" "}
               <span className="text-primary-2">2025</span>
             </p>
@@ -66,12 +78,12 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "translate-y-0" : "-translate-y-full"
-        } fixed flex sm:hidden flex-col backdrop-blur-2xl transition-all duration-700 h-screen w-screen items-center justify-center z-100 gap-20`}
+        } fixed flex sm:hidden flex-col backdrop-blur-xl transition-all duration-700 h-screen w-screen items-center justify-center z-[9999] gap-20`}
       >
         <div className="relative w-24 h-24">
           <Image src={"/logo.png"} alt="logo" fill className="object-cover" />
         </div>
-        <div className="text-center font-visby text-3xl text-primary-1 space-y-10">
+        <div className="text-center font-visby text-shadow-black text-3xl text-primary-1 space-y-10">
           <p>Home</p>
           <p>About Us</p>
           <p>Programs</p>
