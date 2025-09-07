@@ -79,7 +79,7 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "translate-y-0" : "-translate-y-full"
-        } fixed flex sm:hidden flex-col backdrop-blur-xl transition-all duration-700 h-screen w-screen items-center justify-center z-[9999] gap-20`}
+        } fixed flex sm:hidden flex-col pb-24 backdrop-blur-xl transition-all duration-700 h-screen w-screen items-center justify-center z-[9999] gap-20`}
       >
         <div className="relative w-24 h-24">
           <Image src={"/logo.png"} alt="logo" fill className="object-cover" />

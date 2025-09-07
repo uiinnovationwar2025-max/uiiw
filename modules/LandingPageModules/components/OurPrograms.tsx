@@ -36,7 +36,7 @@ const OurPrograms = () => {
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center py-12 sm:py-24 relative bg-no-repeat bg-center bg-contain overflow-hidden">
+    <main className="flex flex-col items-center py-12 sm:py-24 relative bg-no-repeat bg-center bg-contain overflow-hidden">
       <div className="absolute top-1/2 -translate-y-1/2 -z-40 block w-full h-[144rem]">
         <Image
           src={"/landing-hero/object-3.svg"}
@@ -45,7 +45,7 @@ const OurPrograms = () => {
           className="object-contain scale-125"
         />
       </div>
-      <h1 className="text-primary-1 font-visby text-3xl sm:text-5xl font-bold mb-12 sm:mb-24">
+      <h1 className="text-primary-1 font-visby text-3xl sm:text-5xl font-bold mt-6 mb-6 sm:mb-24">
         Our Programs
       </h1>
       <div

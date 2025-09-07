@@ -79,7 +79,7 @@ const events = [
 
 const Timeline = () => {
   return (
-    <main className="min-h-screen flex flex-col items-center py-12 sm:py-24">
+    <main className="flex flex-col items-center py-12 sm:py-24">
       <h1 className="relative text-primary-1 font-visby text-3xl sm:text-5xl font-bold mb-12 sm:mb-24">
         Timeline
       </h1>

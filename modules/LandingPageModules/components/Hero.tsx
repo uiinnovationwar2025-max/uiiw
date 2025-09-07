@@ -5,7 +5,7 @@ import { ArrowUpRight, FileText } from "lucide-react";
 const Hero = () => {
   return (
     <>
-      <main className="relative flex gap-12 flex-col min-h-screen  text-center items-center lg:overflow-hidden justify-center max-[1440px]:pt-36">
+      <main className="relative flex gap-6 sm:gap-12 flex-col  text-center items-center lg:overflow-hidden justify-center max-sm:pt-30 max-[1440px]:pt-36">
         {/* Desktop Object */}
         <div className="absolute -top-24 -z-40 hidden lg:block -left-14 w-5xl mx-auto max-w-screen h-[72rem] ">
           <Image src={"/landing-hero/object-1.svg"} alt="object" fill />
@@ -39,7 +39,7 @@ const Hero = () => {
             <span className="text-primary-2">EvolvingStrategy</span>
           </p>
         </div>
-        <p className="font-primary font-semibold max-md:text-md md:text-lg px-10 md:px-0 md:text-s7 text-secondary-2">
+        <p className="font-primary font-semibold max-md:text-sm md:text-lg px-10 md:px-0 md:text-s7 text-secondary-2">
           Optimizing Intelligence Diversity in Enhancing Adaptive Strategy for
           Business Management and Operation
         </p>
