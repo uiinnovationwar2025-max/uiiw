@@ -30,7 +30,7 @@ const FAQ = () => {
   ];
 
   return (
-    <main className="min-h-screen max-md:px-10 flex-col relative md:px-20 flex items-center justify-center">
+    <main className="flex flex-col items-center justify-center relative md:px-20 max-md:px-10 py-12 sm:py-24">
       <p className="text-primary-1 font-visby max-md:text-4xl md:text-6xl mb-10">
         FAQ
       </p>

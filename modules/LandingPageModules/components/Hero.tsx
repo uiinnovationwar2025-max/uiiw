@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, FileText } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -44,18 +45,18 @@ const Hero = () => {
           Business Management and Operation
         </p>
         <div className="flex flex-wrap justify-center gap-4 z-100 ">
-          <Button
-            variant={"primary"}
-            size={"lg"}
-            className="w-48 h-12 hover:opacity-40 "
-          >
-            See About Us
-            <ArrowUpRight />
-          </Button>
-          <Button variant={"tertiary"} size={"lg"} className="w-48 h-12">
-            Register
-            <FileText />
-          </Button>
+          <Link href="/about-us">
+            <Button variant={"primary"} size={"lg"} className="w-48 h-12">
+              See About Us
+              <ArrowUpRight />
+            </Button>
+          </Link>
+          <Link href="/register">
+            <Button variant={"tertiary"} size={"lg"} className="w-48 h-12">
+              Register
+              <FileText />
+            </Button>
+          </Link>
         </div>
       </main>
     </>

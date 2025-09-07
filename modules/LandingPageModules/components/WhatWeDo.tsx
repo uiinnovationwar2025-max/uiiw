@@ -19,23 +19,22 @@ const WhatWeDo = () => {
       </div>
 
       {/* Grid (Using Flexbox) */}
-      <div className="flex justify-center w-full">
-        {/* Partition Left Side*/}
-        <div className="flex flex-col w-auto h-48 lg:w-[50.798rem] lg:h-[33.25rem] mr-1 lg:mr-5 mb-2 lg:mb-0">
-          <div className="flex justify-end w-auto h-24 lg:w-[50.8125rem] lg:h-64">
-            <div className="border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black w-[7.5rem] h-24 lg:w-[29.125rem] lg:h-64 lg:mx-1"></div>
-            <div className="border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black w-[5.5rem] h-24 lg:w-80 lg:h-64 ml-2 lg:ml-4"></div>
+      <div className="flex flex-col lg:flex-row justify-center w-full px-4 sm:px-6 lg:px-8">
+        {/* Left Side */}
+        <div className="flex flex-col w-full lg:w-2/3 lg:mr-5">
+          <div className="flex w-full h-48 lg:h-64">
+            <div className="w-3/5 h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black mr-2 lg:mr-4"></div>
+            <div className="w-2/5 h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black"></div>
           </div>
-
-          <div className="flex w-full h-24 lg:w-[50.813rem] lg:h-64 mt-2 lg:mt-6 justify-end">
-            <div className="border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black w-[5.5rem] h-24 lg:w-80 lg:h-64 mr-2 lg:mr-0 lg:mx-1"></div>
-            <div className="border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black w-[7.5rem] h-24 lg:w-[29.188rem] lg:h-64 lg:ml-4"></div>
+          <div className="flex w-full h-48 lg:h-64 mt-2 lg:mt-6">
+            <div className="w-2/5 h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black mr-2 lg:mr-4"></div>
+            <div className="w-3/5 h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black"></div>
           </div>
         </div>
 
-        {/* Partition Right Side  */}
-        <div className="w-28 h-[12.25rem] lg:w-80 lg:h-[33.25rem] mx-1 lg:mx-0">
-          <div className="border-4 lg:border-8 border-secondary-2 rounded-lg w-full h-full bg-black"></div>
+        {/* Right Side */}
+        <div className="w-full lg:w-1/3 h-48 lg:h-[33.25rem] mt-2 lg:mt-0">
+          <div className="w-full h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black"></div>
         </div>
       </div>
     </main>

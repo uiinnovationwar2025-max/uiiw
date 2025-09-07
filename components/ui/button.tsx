@@ -5,11 +5,11 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-md text-primary-5 font-primary font-bold hover:cursor-pointer",
+  "overflow-hidden inline-flex relative items-center justify-center gap-2 whitespace-nowrap rounded-sm text-md text-primary-5 font-primary font-bold hover:cursor-pointer",
   {
     variants: {
       variant: {
-        primary: "bg-linear-to-r from-primary-2 to-primary-1 ",
+        primary: "bg-linear-to-r from-primary-2 to-primary-1",
         primaryShadow: "bg-linear-to-r from-primary-2 to-primary-1 shadow-md",
         primaryInsetShadow:
           "bg-linear-to-r from-primary-2 to-primary-1  inset-shadow-sm inset-shadow-black/50",
@@ -49,6 +49,7 @@ function Button({
   variant,
   size,
   asChild = false,
+  children,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
@@ -61,7 +62,10 @@ function Button({
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
-    />
+    >
+      <div className="transition w-full h-full bg-primary-1 opacity-0 hover:opacity-20 active:opacity-40 absolute" />
+      {children}
+    </Comp>
   );
 }
 
