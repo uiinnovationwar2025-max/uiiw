@@ -7,7 +7,7 @@ const CoreValues = () => {
     src="/CoreValuesLineObject.webp"
     className="absolute inset-0 w-full h-full object-cover -z-10"
     alt="Background Lines"
-  />
+    />
     {/* Heading */}
     <div className="my-7 w-full text-h1 text-center text-primary-1">
       Core Values
