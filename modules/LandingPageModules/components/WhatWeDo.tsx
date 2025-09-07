@@ -2,7 +2,7 @@ const WhatWeDo = () => {
   return (
   <main className="min-h-screen flex flex-col items-center py-12 sm:py-24">
     {/* Heading */}
-    <div className="my-7 w-full font-visby text-2xl leading-8 lg:text-6xl lg:leading-14 text-center text-primary-1">
+    <div className="my-7 lg:my-13 w-full font-visby text-2xl leading-8 lg:text-6xl lg:leading-14 text-center text-primary-1">
       What We<span style={{ fontFamily: "Arial, sans-serif" }}>'</span>ve Done..
     </div>
 
