@@ -28,6 +28,7 @@ const buttonVariants = cva(
           "border-3 rounded-md border-primary-1 text-primary-1 inset-shadow-sm inset-shadow-black/50",
         tertiaryGhost:
           "border-3 rounded-md border-primary-1 text-primary-1 opacity-40",
+        outline: "",
       },
       size: {
         default: "h-9 px-10 py-6 has-[>svg]:px-3",

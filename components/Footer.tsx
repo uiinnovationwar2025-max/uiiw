@@ -34,7 +34,7 @@ const Footer = () => {
           </p>
           <p className="inline-flex gap-2">
             <span>
-              <Music2 />
+              <img src="/tiktok.svg" />
             </span>{" "}
             @ui_innovationwar
           </p>

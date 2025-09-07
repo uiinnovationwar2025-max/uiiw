@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ChevronDown, AlignRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -37,11 +38,11 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full flex items-center z-[999] justify-center px-10 py-8  transition-all duration-500 delay-300 ${
+        className={`fixed top-0 left-0 w-full flex items-center z-[999] justify-center px-10 py-8 transition-all duration-500 delay-300 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <nav className="flex flex-wrap w-7xl bg-gradient-to-b from-primary-5 to-primary-4 items-center justify-between max-md:border-2 border-3 border-primary-1 rounded-full max-md:px-8 px-12 py-2">
+        <nav className="flex flex-wrap w-7xl bg-gradient-to-b from-primary-5 to-primary-4 items-center justify-between max-md:border-2 border-3 border-primary-1 rounded-full max-md:px-8 px-12 py-3">
           <div className="flex flex-wrap items-center gap-3">
             <div className="relative max-md:w-8 max-md:h-8 w-14 h-14">
               <Image
@@ -52,20 +53,20 @@ const Navbar = () => {
               />
             </div>
             <p className="font-visby font-bold max-md:text-sm text-lg text-primary-1">
-              UI <br className="max-md:hidden" /> INNOVATION <br /> WAR{" "}
+              UI INNOVATION <br /> WAR{" "}
               <span className="text-primary-2">2025</span>
             </p>
           </div>
           <div className="flex max-md:hidden flex-row font-semibold text-md font-visby gap-10 text-primary-1">
-            <p className="hover:cursor-pointer ">Home</p>
-            <p className="hover:cursor-pointer">About Us</p>
-            <p className="flex items-center gap-2 hover:cursor-pointer">
-              Programs{" "}
-              <span>
-                <ChevronDown />
-              </span>
-            </p>
-            <p className="hover:cursor-pointer">Register</p>
+            <Link href="/" className="hover:cursor-pointer ">
+              Home
+            </Link>
+            <Link href="/about-us" className="hover:cursor-pointer">
+              About Us
+            </Link>
+            <Link href="/register" className="hover:cursor-pointer">
+              Register
+            </Link>
           </div>
           <AlignRight
             onClick={() => setIsOpen(!isOpen)}

@@ -3,6 +3,7 @@ import { useState } from "react";
 import CardComponent from "../../../components/Card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 interface Program {
   id: number;
@@ -35,16 +36,22 @@ const OurPrograms = () => {
   };
 
   return (
-    <main
-      className="min-h-screen flex flex-col items-center py-12 sm:py-24 relative bg-no-repeat bg-center bg-contain"
-    >
+    <main className="min-h-screen flex flex-col items-center py-12 sm:py-24 relative bg-no-repeat bg-center bg-contain overflow-hidden">
+      <div className="absolute top-1/2 -translate-y-1/2 -z-40 block w-full h-[144rem]">
+        <Image
+          src={"/landing-hero/object-3.svg"}
+          alt="object"
+          fill
+          className="object-contain scale-125"
+        />
+      </div>
       <h1 className="text-primary-1 font-visby text-3xl sm:text-5xl font-bold mb-12 sm:mb-24">
         Our Programs
       </h1>
       <div
         className="
           flex flex-col gap-6 w-full max-w-6xl px-4
-          sm:grid sm:grid-cols-2 sm:gap-x-12 sm:gap-y-10
+          sm:grid sm:grid-cols-2 sm:gap-x-6 lg:gap-x-12 sm:gap-y-10
         "
       >
         {programs.map((program, index) => (
@@ -52,20 +59,18 @@ const OurPrograms = () => {
             key={program.id}
             onClick={() => openModal(program)}
             className={`
-              bg-black rounded-xl cursor-pointer
+              border-4 lg:border-8 border-secondary-2 rounded-lg sm:rounded-3xl bg-black cursor-pointer
               flex items-center justify-center
               transition hover:scale-105
-              ${index === 4 ? "sm:col-span-2 sm:mx-auto" : ""}
+               ${index === 4 ? "sm:translate-x-1/2 sm:ml-3 lg:ml-6" : ""}
             `}
             style={{
               aspectRatio: "476/282",
               width: "100%",
-              maxWidth: index === 4 ? "600px" : "100%",
               minWidth: "200px",
               maxHeight: "320px",
             }}
-          >
-          </div>
+          ></div>
         ))}
       </div>
 
@@ -76,7 +81,9 @@ const OurPrograms = () => {
         >
           <CardComponent
             className="pt-5 pb-8 px-4 sm:px-8 rounded-xl w-[98vw] max-w-[720px] h-auto text-white"
-            onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}
+            onClick={(e: React.MouseEvent<HTMLDivElement>) =>
+              e.stopPropagation()
+            }
             style={{
               aspectRatio: "720/320",
               maxHeight: "95vh",
@@ -86,13 +93,11 @@ const OurPrograms = () => {
               <h2 className="text-center w-full text-h3 font-bold mb-4 mt-5">
                 {selectedProgram.name}
               </h2>
-              <p className="mb-8 text-left w-full text-b7">{selectedProgram.description}</p>
+              <p className="mb-8 text-left w-full text-b7">
+                {selectedProgram.description}
+              </p>
               <div className="w-full flex justify-center">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  className="w-full h-12"
-                >
+                <Button variant="primary" size="lg" className="w-full h-12">
                   Register
                 </Button>
               </div>

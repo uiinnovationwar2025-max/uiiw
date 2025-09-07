@@ -5,23 +5,23 @@ import { ArrowUpRight, FileText } from "lucide-react";
 const Hero = () => {
   return (
     <>
-      <main className="relative flex gap-12 flex-col min-h-screen  text-center items-center justify-center overflow-hidden">
+      <main className="relative flex gap-12 flex-col min-h-screen  text-center items-center lg:overflow-hidden justify-center max-[1440px]:pt-36">
         {/* Desktop Object */}
-        <div className="absolute -top-24 hidden lg:block -left-14 w-5xl mx-auto max-w-screen h-[72rem] ">
+        <div className="absolute -top-24 -z-40 hidden lg:block -left-14 w-5xl mx-auto max-w-screen h-[72rem] ">
           <Image src={"/landing-hero/object-1.svg"} alt="object" fill />
         </div>
 
-        <div className="absolute -top-24 right-0 hidden lg:block w-2xl mx-auto max-w-screen h-[72rem] ">
+        <div className="absolute -top-24 -z-40 right-0 hidden lg:block w-2xl mx-auto max-w-screen h-[72rem] ">
           <Image src={"/landing-hero/object-2.svg"} alt="object" fill />
         </div>
 
         {/* Mobile Object */}
-        <div className="absolute -top-48 block lg:hidden w-full mx-auto max-w-5xl h-[36rem] ">
+        <div className="absolute -top-48 -z-40 block lg:hidden w-full mx-auto max-w-5xl h-[36rem] ">
           <Image src={"/landing-hero/object-3.svg"} alt="object" fill />
         </div>
 
         {/* TODO: Bisa disambung sama our programs */}
-        <div className="absolute -bottom-64 -z-40 block lg:hidden w-full mx-auto max-w-5xl h-[36rem] ">
+        <div className="absolute -bottom-64 -z-40 block lg:hidden w-full mx-auto max-w-5xl h-[36rem]">
           <Image src={"/landing-hero/object-4.svg"} alt="object" fill />
         </div>
 
@@ -43,7 +43,7 @@ const Hero = () => {
           Optimizing Intelligence Diversity in Enhancing Adaptive Strategy for
           Business Management and Operation
         </p>
-        <div className="md:space-x-10 flex flex-wrap justify-center gap-7 z-100 ">
+        <div className="flex flex-wrap justify-center gap-4 z-100 ">
           <Button
             variant={"primary"}
             size={"lg"}
