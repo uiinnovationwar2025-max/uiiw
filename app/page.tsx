@@ -1,7 +1,5 @@
+import LandingPageModules from "@/modules/LandingPageModules";
+
 export default function Home() {
-  return (
-    <>
-      <div>UIIW PROJECT</div>
-    </>
-  );
+  return <LandingPageModules />;
 }
