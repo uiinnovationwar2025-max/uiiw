@@ -14,20 +14,20 @@ import CardComponent from "@/components/Card";
 const LogoPhilosophy = () => {
   const contents = [
     {
-      imgSource: "/Filosofi1.webp",
+      imgSource: "/Filosofi1.png",
       description:
         "Dua balok yang menghadap ke atas dan ke depan melambangkan keberlanjutan",
     },
     {
-      imgSource: "/Filosofi1.webp",
+      imgSource: "/Filosofi1.png",
       description:
         "Dua balok yang menghadap ke atas dan ke depan melambangkan keberlanjutan",
     },
   ];
 
   return (
-    <main className="min-h-screen flex flex-col  py-12 justify-center">
-      <div className="absolute max-md:w-2xl max-md:h-[42rem] w-screen h-screen">
+    <main className="relative min-h-screen flex flex-col overflow-hidden  py-12 justify-center">
+      <div className="absolute max-md:w-2xl overflow-hidden max-md:h-[42rem] w-screen h-screen">
         <Image
           src={"/LogoPhiloLines.webp"}
           alt="Lines"
@@ -35,12 +35,6 @@ const LogoPhilosophy = () => {
           className=" object-contain"
         />
       </div>
-
-      <img
-        src="/LogoPhiloLines.webp"
-        className="absolute inset-0 w-full h-full object-scale-down -z-10"
-        alt="Background Lines"
-      />
 
       {/* Heading */}
 
