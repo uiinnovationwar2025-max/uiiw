@@ -14,12 +14,12 @@ import CardComponent from "@/components/Card";
 const LogoPhilosophy = () => {
   const contents = [
     {
-      imgSource: "/Filosofi1.png",
+      imgSource: "/Filosofi1.webp",
       description:
         "Dua balok yang menghadap ke atas dan ke depan melambangkan keberlanjutan",
     },
     {
-      imgSource: "/Filosofi1.png",
+      imgSource: "/Filosofi1.webp",
       description:
         "Dua balok yang menghadap ke atas dan ke depan melambangkan keberlanjutan",
     },
@@ -69,36 +69,9 @@ const LogoPhilosophy = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-secondary-2 w-12 h-12 text-tertiary-5" />
-          <CarouselNext className="bg-secondary-2 w-12 h-12 text-tertiary-5" />
+          <CarouselPrevious className="max-md:w-8 max-md:h-8 bg-secondary-2 w-12 h-12 text-tertiary-5" />
+          <CarouselNext className="max-md:w-8 max-md:h-8 bg-secondary-2 w-12 h-12 text-tertiary-5" />
         </Carousel>
-
-        {/* <Carousel className="w-full max-w-4xl h-auto">
-          <CarouselContent>
-            {contents.map(({ imgSource, description }, index) => (
-              <CarouselItem key={index} className="h-auto ">
-                <Card className="bg-transparent border-0 shadow-none">
-                  <CardContent className="flex flex-col items-center justify-center">
-                    <div className="w-70 lg:w-100 flex justify-center translate-x-3">
-                      <img
-                        src={imgSource}
-                        className="w-full h-full "
-                        alt="Logo Philosophy"
-                      />
-                    </div>
-                    <div className="rounded-2xl w-[20.438rem] lg:w-[24rem] h-[3.5rem] lg:h-[4rem] bg-gradient-to-br from-secondary-3 to-secondary-1 px-5 my-7 text-center">
-                      <div className="font-visby text-xs leading-4 lg:text-sm lg:leading-5 text-primary-5 my-3">
-                        {description}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselNext className="w-10 h-10 bg-black" />
-          <CarouselPrevious className="w-10 h-10 bg-black" />
-        </Carousel> */}
       </div>
     </main>
   );
