@@ -29,11 +29,11 @@ const WhatWeDo = () => {
             <div className=" w-2/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black "></div>
             <div className=" w-3/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
           </div>
+        </div>
 
-          {/* Right Side */}
-          <div className="max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
-            <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
-          </div>
+        {/* Right Side */}
+        <div className="max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
+          <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
         </div>
       </div>
     </main>

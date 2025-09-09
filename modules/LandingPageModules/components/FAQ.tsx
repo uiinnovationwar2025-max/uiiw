@@ -37,7 +37,7 @@ const FAQ = () => {
       <Accordion
         type="single"
         collapsible
-        className="w-full h-[55vh] max-md:space-y-2 md:space-y-6"
+        className="w-full h-[57vh] max-md:space-y-2 md:space-y-6"
         defaultValue="item-1"
       >
         {FAQContent.map(({ question, answer }, index) => (
