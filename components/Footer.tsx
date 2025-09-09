@@ -5,7 +5,7 @@ import { Instagram, Music2 } from "lucide-react";
 const Footer = () => {
   return (
     <>
-      <footer className="flex max-sm:flex-col flex-row items-center max-sm:justify-center justify-between bg-gradient-to-b border-t-3 border-primary-1 from-primary-5 to-primary-4 px-12 py-6  text-gray-100 mt-auto">
+      <footer className="flex max-sm:flex-col  flex-row items-center max-sm:justify-center justify-between bg-gradient-to-b border-t-3 border-primary-1 from-primary-5 to-primary-4 px-12 py-6  text-gray-100 ">
         <div className="flex flex-col  max-sm:items-center">
           <div className="flex flex-wrap items-center gap-3">
             <div className="relative w-20 h-20">

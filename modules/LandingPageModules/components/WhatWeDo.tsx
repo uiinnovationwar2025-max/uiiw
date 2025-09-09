@@ -19,6 +19,10 @@ const WhatWeDo = () => {
 
       {/* Grid (Using Flexbox) */}
       <div className="flex max-sm:flex-col flex-row  max-sm:gap-2 gap-4 justify-center w-full px-8">
+        {/* Right Side */}
+        <div className="max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
+          <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
+        </div>
         {/* Left Side */}
         <div className="flex flex-col max-sm:h-60 max-sm:w-full w-2/3 max-sm:gap-2 gap-4 ">
           <div className="flex  w-full h-64 max-sm:gap-2 gap-4">
@@ -29,11 +33,6 @@ const WhatWeDo = () => {
             <div className=" w-2/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black "></div>
             <div className=" w-3/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
           </div>
-        </div>
-
-        {/* Right Side */}
-        <div className="max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
-          <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
         </div>
       </div>
     </main>

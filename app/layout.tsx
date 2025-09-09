@@ -46,10 +46,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${visby.variable} ${poppins.variable} ${questrial.variable} relative border border-primary-1 mx-auto max-w-[1440px] antialiased bg-gradient-to-r from-primary-5 to-primary-4 min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} ${visby.variable} ${poppins.variable} ${questrial.variable} relative border border-primary-1 mx-auto max-w-[1440px] antialiased bg-gradient-to-r from-primary-5 to-primary-4 min-h-dvh flex flex-col`}
       >
         <Navbar />
-        {children}
+        <div className="flex-1">{children}</div>
         <Footer />
       </body>
     </html>

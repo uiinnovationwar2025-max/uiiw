@@ -30,14 +30,14 @@ const FAQ = () => {
   ];
 
   return (
-    <main className="flex flex-col items-center justify-center relative md:px-20 max-md:px-10 py-12 sm:py-24">
+    <main className="flex flex-col items-center min-h-screenjustify-center relative md:px-20 max-md:px-10 py-12 sm:py-24">
       <p className="text-primary-1 font-visby max-md:text-4xl md:text-6xl mb-10">
         FAQ
       </p>
       <Accordion
         type="single"
         collapsible
-        className="w-full max-md:space-y-2 md:space-y-6"
+        className="w-full h-[55vh] max-md:space-y-2 md:space-y-6"
         defaultValue="item-1"
       >
         {FAQContent.map(({ question, answer }, index) => (
