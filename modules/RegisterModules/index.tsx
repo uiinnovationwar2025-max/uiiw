@@ -1,6 +1,9 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { File, FileText } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const menus = [
@@ -23,14 +26,14 @@ const menus = [
     title: "Business Plan Competition",
     description:
       "Business Plan Competition (BPC) merupakan kompetisi rencana bisnis yang diselenggarakan untuk siswa Sekolah Menengah Atas (SMA). Tujuannya adalah untuk mendorong kreativitas, inovasi, dan semangat kewirausahaan di kalangan remaja. BPC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BPC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
-    url: "https://example.com/",
+    url: "",
   },
   {
     value: "bcc",
     title: "Business Case Competition",
     description:
       "Business Case Competition (BCC) merupakan kompetisi studi kasus bisnis yang dilakukan oleh tim-tim mahasiswa dalam bersaing untuk merancang solusi bisnis yang inovatif dan mempresentasikannya di hadapan dewan juri. BCC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BCC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
-    url: "https://example.com/",
+    url: "",
   },
 ];
 
@@ -182,6 +185,17 @@ const RegisterModules = () => {
         <div className="font-primary text-xs leading-4 lg:text-sm lg:leading-5 text-primary-5 mt-2 lg:mt-0">
           {selectedMenu.description}
         </div>
+        {selectedMenu.url == "" ? (
+          <h1 className="font-primary font-bold leading-6 lg:text-lg lg:leading-8 text-primary-5 lg:my-3">
+            Pendaftaran dibuka 12/12/1212
+          </h1>
+        ) : (
+          <Link href={selectedMenu.url}>
+            <Button className="w-full mt-4">
+              Register <FileText />
+            </Button>
+          </Link>
+        )}
       </div>
     </main>
   );
