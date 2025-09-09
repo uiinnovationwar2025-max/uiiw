@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CardComponent from "../../../components/Card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
@@ -13,6 +13,18 @@ interface Program {
 
 const OurPrograms = () => {
   const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
+
+  useEffect(() => {
+    if (selectedProgram) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedProgram]);
 
   const programs: Program[] = [
     {

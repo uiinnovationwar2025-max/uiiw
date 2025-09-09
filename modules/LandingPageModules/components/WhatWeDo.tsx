@@ -13,28 +13,27 @@ const WhatWeDo = () => {
       </div>
 
       {/* Heading */}
-      <div className="my-7 lg:my-13 w-full font-visby text-2xl leading-8 lg:text-6xl lg:leading-14 text-center text-primary-1">
-        What We<span style={{ fontFamily: "Arial, sans-serif" }}>'</span>ve
-        Done..
+      <div className="my-7 lg:my-13 w-full font-visby text-3xl leading-8 md:text-6xl lg:leading-14 text-center text-primary-1">
+        What We<span className="font-primary">'</span>ve Done..
       </div>
 
       {/* Grid (Using Flexbox) */}
-      <div className="flex flex-col lg:flex-row justify-center w-full px-4 sm:px-6 lg:px-8">
+      <div className="flex max-sm:flex-col flex-row  max-sm:gap-2 gap-4 justify-center w-full px-8">
         {/* Left Side */}
-        <div className="flex flex-col w-full lg:w-2/3 lg:mr-5">
-          <div className="flex w-full h-48 lg:h-64">
-            <div className="w-3/5 h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black mr-2 lg:mr-4"></div>
-            <div className="w-2/5 h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black"></div>
+        <div className="flex flex-col max-sm:h-60 max-sm:w-full w-2/3 max-sm:gap-2 gap-4 ">
+          <div className="flex  w-full h-64 max-sm:gap-2 gap-4">
+            <div className=" w-3/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black "></div>
+            <div className=" w-2/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
           </div>
-          <div className="flex w-full h-48 lg:h-64 mt-2 lg:mt-6">
-            <div className="w-2/5 h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black mr-2 lg:mr-4"></div>
-            <div className="w-3/5 h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black"></div>
+          <div className="flex w-full h-64 max-sm:gap-2 gap-4">
+            <div className=" w-2/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black "></div>
+            <div className=" w-3/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
           </div>
         </div>
 
         {/* Right Side */}
-        <div className="w-full lg:w-1/3 h-48 lg:h-[33.25rem] mt-2 lg:mt-0">
-          <div className="w-full h-full border-4 lg:border-8 border-secondary-2 rounded-lg lg:rounded-3xl bg-black"></div>
+        <div className="max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
+          <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
         </div>
       </div>
     </main>

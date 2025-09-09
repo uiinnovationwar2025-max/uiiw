@@ -84,11 +84,16 @@ const Navbar = () => {
         <div className="relative w-24 h-24">
           <Image src={"/logo.png"} alt="logo" fill className="object-cover" />
         </div>
-        <div className="text-center font-visby text-shadow-black text-3xl text-primary-1 space-y-10">
-          <p>Home</p>
-          <p>About Us</p>
-          <p>Programs</p>
-          <p>Register</p>
+        <div className="text-center flex flex-col font-visby text-shadow-black text-3xl text-primary-1 space-y-10">
+          <Link href={"/"} onClick={() => setIsOpen(!isOpen)}>
+            Home
+          </Link>
+          <Link href={"/about-us"} onClick={() => setIsOpen(!isOpen)}>
+            About Us
+          </Link>
+          <Link href={"/register"} onClick={() => setIsOpen(!isOpen)}>
+            Register
+          </Link>
         </div>
         <Button
           variant={"tertiary"}

@@ -26,18 +26,22 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col max-sm:flex-row gap-3 text-primary-1 font-primary text-sm max-sm:mt-6 font-semibold ">
-          <p className="inline-flex gap-2">
-            <span>
-              <Instagram />
-            </span>{" "}
-            @ui.innovationwar
-          </p>
-          <p className="inline-flex gap-2">
-            <span>
-              <img src="/tiktok.svg" />
-            </span>{" "}
-            @ui_innovationwar
-          </p>
+          <Link href={"https://www.instagram.com/ui.innovationwar/?hl=en"}>
+            <p className="inline-flex gap-2 hover:underline hover:cursor-pointer">
+              <span>
+                <Instagram />
+              </span>{" "}
+              @ui.innovationwar
+            </p>
+          </Link>
+          <Link href={"https://www.tiktok.com/@ui_innovationwar"}>
+            <p className="inline-flex gap-2 hover:underline hover:cursor-pointer">
+              <span>
+                <img src="/tiktok.svg" />
+              </span>{" "}
+              @ui_innovationwar
+            </p>
+          </Link>
         </div>
       </footer>
     </>
