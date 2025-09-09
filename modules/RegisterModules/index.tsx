@@ -1,4 +1,7 @@
+"use client";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { useState } from "react";
 
 const menus = [
   {
@@ -16,12 +19,14 @@ const menus = [
     url: "https://example.com/",
   },
   {
+    value: "bpc",
     title: "Business Plan Competition",
     description:
       "Business Plan Competition (BPC) merupakan kompetisi rencana bisnis yang diselenggarakan untuk siswa Sekolah Menengah Atas (SMA). Tujuannya adalah untuk mendorong kreativitas, inovasi, dan semangat kewirausahaan di kalangan remaja. BPC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BPC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
     url: "https://example.com/",
   },
   {
+    value: "bcc",
     title: "Business Case Competition",
     description:
       "Business Case Competition (BCC) merupakan kompetisi studi kasus bisnis yang dilakukan oleh tim-tim mahasiswa dalam bersaing untuk merancang solusi bisnis yang inovatif dan mempresentasikannya di hadapan dewan juri. BCC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BCC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
@@ -30,8 +35,16 @@ const menus = [
 ];
 
 const RegisterModules = () => {
+  const [selectedMenu, setSelectedMenu] = useState(menus[0]);
+  const [clickedMenu, setClickedMenu] = useState(menus[0]);
+
+  const handleClick = (menu: any) => {
+    setSelectedMenu(menu);
+    setClickedMenu(menu);
+  };
+
   return (
-    <main className="relative flex max-sm:gap-6 flex-col min-h-screen text-center items-center lg:overflow-hidden justify-center pt-30 sm:pt-40">
+    <main className="relative flex max-sm:gap-6 flex-col min-h-screen text-center items-center lg:overflow-hidden justify-center pt-30 sm:pt-40 pb-20">
       {/* Desktop Object */}
       <div className="absolute -top-24 -z-40 hidden lg:block -left-14 w-5xl mx-auto max-w-screen h-[72rem] ">
         <Image src={"/landing-hero/object-1.svg"} alt="object" fill />
@@ -60,62 +73,114 @@ const RegisterModules = () => {
           className="object-contain"
         />
         <div className="flex items-center w-full px-[5%] gap-[1%] h-full absolute top-0">
-          <div className="group w-1/4 h-2/3 relative">
+          <div
+            className="group w-1/4 cursor-pointer h-2/3 relative"
+            onClick={() => handleClick(menus[0])}
+          >
             <Image
               src={"/register/duwi-frame.webp"}
               alt="object"
-              className="object-contain group-hover:scale-105 transition saturate-0 group-hover:saturate-100"
+              className={cn(
+                "object-contain group-hover:scale-105 transition saturate-0 group-hover:saturate-100",
+                clickedMenu.value === "duwi" && "scale-105 saturate-100"
+              )}
               fill
+              sizes="100%"
             />
             <Image
               src={"/register/duwi.webp"}
               alt="object"
-              className="object-contain scale-85 group-hover:scale-75 transition"
+              className={cn(
+                "object-contain scale-85 group-hover:scale-75 transition",
+                clickedMenu.value === "duwi" && "scale-75"
+              )}
               fill
+              sizes="100%"
             />
           </div>
-          <div className="group w-1/4 h-[52%] relative">
+          <div
+            className="group w-1/4 cursor-pointer h-[52%] relative"
+            onClick={() => handleClick(menus[1])}
+          >
             <Image
               src={"/register/mcc-frame.webp"}
               alt="object"
-              className="object-contain group-hover:scale-105 transition saturate-0 group-hover:saturate-100"
+              className={cn(
+                "object-contain group-hover:scale-105 transition saturate-0 group-hover:saturate-100",
+                clickedMenu.value === "mcc" && "scale-105 saturate-100"
+              )}
               fill
+              sizes="100%"
             />
             <Image
               src={"/register/mcc.webp"}
               alt="object"
-              className="object-contain scale-85 group-hover:scale-75 transition"
+              className={cn(
+                "object-contain scale-85 group-hover:scale-75 transition",
+                clickedMenu.value === "mcc" && "scale-75"
+              )}
               fill
+              sizes="100%"
             />
           </div>
-          <div className="group w-1/4 h-[52%] relative">
+          <div
+            className="group w-1/4 cursor-pointer h-[52%] relative"
+            onClick={() => handleClick(menus[2])}
+          >
             <Image
               src={"/register/bpc-frame.webp"}
               alt="object"
-              className="object-contain group-hover:scale-105 transition saturate-0 group-hover:saturate-100"
+              className={cn(
+                "object-contain group-hover:scale-105 transition saturate-0 group-hover:saturate-100",
+                clickedMenu.value === "bpc" && "scale-105 saturate-100"
+              )}
               fill
+              sizes="100%"
             />
             <Image
               src={"/register/bpc.webp"}
               alt="object"
-              className="object-contain scale-85 group-hover:scale-75 transition"
+              className={cn(
+                "object-contain scale-85 group-hover:scale-80 transition",
+                clickedMenu.value === "bpc" && "scale-75"
+              )}
               fill
+              sizes="100%"
             />
           </div>
-          <div className="group w-1/4 h-2/3 relative">
+          <div
+            className="group w-1/4 cursor-pointer h-2/3 relative"
+            onClick={() => handleClick(menus[3])}
+          >
             <Image
               src={"/register/bcc-frame.webp"}
               alt="object"
-              className="object-contain group-hover:scale-105 transition saturate-0 group-hover:saturate-100"
+              className={cn(
+                "object-contain group-hover:scale-105 transition saturate-0 group-hover:saturate-100",
+                clickedMenu.value === "bcc" && "scale-105 saturate-100"
+              )}
               fill
+              sizes="100%"
             />
             <Image
               src={"/register/bcc.webp"}
               alt="object"
-              className="object-contain scale-85 group-hover:scale-75 transition"
+              className={cn(
+                "object-contain scale-85 group-hover:scale-75 transition",
+                clickedMenu.value === "bcc" && "scale-75"
+              )}
               fill
+              sizes="100%"
             />
           </div>
+        </div>
+      </div>
+      <div className="rounded-2xl max-w-[32rem] mx-8 bg-gradient-to-br from-secondary-3 to-secondary-1 px-5 py-5 lg:py-3 text-center">
+        <div className="font-primary font-bold text-lg leading-6 lg:text-2xl lg:leading-8 text-primary-5 lg:my-3">
+          {selectedMenu.title}
+        </div>
+        <div className="font-primary text-xs leading-4 lg:text-sm lg:leading-5 text-primary-5 mt-2 lg:mt-0">
+          {selectedMenu.description}
         </div>
       </div>
     </main>

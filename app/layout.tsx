@@ -24,7 +24,7 @@ const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-poppins",
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const questrial = Questrial({
