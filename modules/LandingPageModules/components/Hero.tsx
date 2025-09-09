@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <main className="relative flex gap-6 sm:gap-12 flex-col  text-center items-center lg:overflow-hidden justify-center max-sm:pt-30 max-[1440px]:pt-36">
+      <main className="min-h-screen relative flex gap-6 sm:gap-12 flex-col  text-center items-center lg:overflow-hidden justify-center max-sm:pt-30 max-[1440px]:pt-36">
         {/* Desktop Object */}
         <div className="absolute -top-24 -z-40 hidden lg:block -left-14 w-5xl mx-auto max-w-screen h-[72rem] ">
           <Image src={"/landing-hero/object-1.svg"} alt="object" fill />

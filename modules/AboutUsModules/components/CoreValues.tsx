@@ -58,7 +58,7 @@ const CoreValues = () => {
             <div className="font-visby text-lg leading-6 lg:text-2xl lg:leading-8 text-primary-5 lg:my-3">
               {title}
             </div>
-            <div className="font-questrial text-xs leading-4 lg:text-sm lg:leading-5 text-primary-5 mt-2 lg:mt-0">
+            <div className="font-primary text-xs leading-4 lg:text-sm lg:leading-5 text-primary-5 mt-2 lg:mt-0">
               {description}
             </div>
           </div>
