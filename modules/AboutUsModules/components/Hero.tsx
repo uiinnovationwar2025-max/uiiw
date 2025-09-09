@@ -2,7 +2,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 
-const Hero = () => {
+type HeroProps = {
+  onButtonClick: () => void;
+};
+
+const Hero = ({ onButtonClick }: HeroProps) => {
   return (
     <main className="relative flex flex-col min-h-screen items-center justify-center lg:overflow-hidden ">
       {/* Desktop Object */}
@@ -55,6 +59,7 @@ const Hero = () => {
           <Button
             variant="primary"
             size="lg"
+            onClick={onButtonClick}
             className="w-full lg:w-fit px-6 h-12 flex items-center justify-center gap-2"
           >
             Our Core Values <ArrowDown size={20} />
