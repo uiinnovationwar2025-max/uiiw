@@ -24,17 +24,57 @@ const WhatWeDo = () => {
         {/* Left Side */}
         <div className="flex flex-col max-sm:h-60 max-sm:w-full w-2/3 max-sm:gap-2 gap-4 ">
           <div className="flex  w-full h-64 max-sm:gap-2 gap-4">
-            <div className=" w-3/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black "></div>
-            <div className=" w-2/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
+            <div className=" w-3/5 h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black ">
+              <Image
+                src="/documentation/1.jpg"
+                alt="1"
+                width={1000}
+                height={1000}
+                className="object-cover w-full h-full"
+              />
+            </div>
+            <div className=" w-2/5 h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black">
+              <Image
+                src="/documentation/2.jpg"
+                alt="2"
+                width={1000}
+                height={1000}
+                className="object-cover w-full h-full"
+              />
+            </div>
           </div>
           <div className="flex w-full h-64 max-sm:gap-2 gap-4">
-            <div className=" w-2/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black "></div>
-            <div className=" w-3/5 h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
+            <div className=" w-2/5 h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black ">
+              <Image
+                src="/documentation/6.jpg"
+                alt="3"
+                width={1000}
+                height={1000}
+                className="object-cover w-full h-full"
+              />
+            </div>
+            <div className=" w-3/5 h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black">
+              <Image
+                src="/documentation/5.jpg"
+                alt="4"
+                width={1000}
+                height={1000}
+                className="object-cover w-full h-full"
+              />
+            </div>
           </div>
         </div>
 
         <div className="max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
-          <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 rounded-3xl bg-black"></div>
+          <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black">
+            <Image
+              src="/documentation/3.jpg"
+              alt="5"
+              width={1000}
+              height={1000}
+              className="object-cover w-full h-full"
+            />
+          </div>
         </div>
       </div>
     </main>

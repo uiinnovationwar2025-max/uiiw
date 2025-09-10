@@ -6,20 +6,30 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const menus = [
+interface Menu {
+  value: string;
+  title: string;
+  description: string;
+  url: string;
+  opreg: string;
+}
+
+const menus: Menu[] = [
   {
     value: "duwi",
     title: "Discover UI with Innovators (DUWI)",
     description:
       'Discover UI With Innovators (DUWI) 2025 adalah sebuah acara luring yang menjadi bagian dari rangkaian UI Innovation War 2025. Dengan tema "Inspiring Future Leaders to Compete and Create", acara ini bertujuan memberikan wawasan dan inspirasi mengenai dunia kompetisi bisnis bagi siswa SMA/SMK di seluruh Indonesia, serta bermanfaat bagi mahasiswa.',
-    url: "https://example.com/",
+    url: "",
+    opreg: "Pendaftaran dibuka 27 September 2025",
   },
   {
     value: "mcc",
     title: "Mini Case Competition",
     description:
       "Mini Case Competition merupakan kegiatan pre-event daring pada UI Innovation War 2025 yang berperan dalam menarik minat mahasiswa S1 untuk berpartisipasi dalam Business Case Competition dari UI Innovation War 2025. Tujuannya adalah untuk mengasah kemampuan peserta dalam memahami dan menyelesaikan tantangan bisnis nyata (real case) yang diberikan oleh case collaborator. Peserta akan diberikan waktu pengerjaan kasus selama 72 jam, setelah itu akan diumumkan pemenangnya saat acara Discover UI with Innovators DUWI 2025.",
-    url: "https://example.com/",
+    url: "https://bit.ly/OpregMCCUIIW2025",
+    opreg: "Pendaftaran dibuka 12 September 2025",
   },
   {
     value: "bpc",
@@ -27,6 +37,7 @@ const menus = [
     description:
       "Business Plan Competition (BPC) merupakan kompetisi rencana bisnis yang diselenggarakan untuk siswa Sekolah Menengah Atas (SMA). Tujuannya adalah untuk mendorong kreativitas, inovasi, dan semangat kewirausahaan di kalangan remaja. BPC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BPC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
     url: "",
+    opreg: "Pendaftaran dibuka 21 September 2025",
   },
   {
     value: "bcc",
@@ -34,6 +45,7 @@ const menus = [
     description:
       "Business Case Competition (BCC) merupakan kompetisi studi kasus bisnis yang dilakukan oleh tim-tim mahasiswa dalam bersaing untuk merancang solusi bisnis yang inovatif dan mempresentasikannya di hadapan dewan juri. BCC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BCC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
     url: "",
+    opreg: "Pendaftaran dibuka 21 September 2025",
   },
 ];
 
@@ -186,8 +198,8 @@ const RegisterModules = () => {
           {selectedMenu.description}
         </div>
         {selectedMenu.url == "" ? (
-          <h1 className="font-primary font-bold leading-6 lg:text-lg lg:leading-8 text-primary-5 lg:my-3">
-            Pendaftaran dibuka 12/12/1212
+          <h1 className="font-primary font-bold leading-6 lg:text-lg lg:leading-8 text-primary-5 my-2 lg:my-3">
+            {selectedMenu.opreg}
           </h1>
         ) : (
           <Link href={selectedMenu.url}>

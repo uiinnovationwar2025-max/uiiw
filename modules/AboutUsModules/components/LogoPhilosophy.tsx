@@ -14,14 +14,19 @@ import CardComponent from "@/components/Card";
 const LogoPhilosophy = () => {
   const contents = [
     {
-      imgSource: "/Filosofi1.png",
+      imgSource: "/Filosofi1.webp",
       description:
         "Dua balok yang menghadap ke atas dan ke depan melambangkan keberlanjutan",
     },
     {
-      imgSource: "/Filosofi1.png",
+      imgSource: "/Filosofi2.webp",
       description:
-        "Dua balok yang menghadap ke atas dan ke depan melambangkan keberlanjutan",
+        'Gabungan bentuk "UI" dan "IW" melambangkan sinergitas acara',
+    },
+    {
+      imgSource: "/Filosofi2.webp",
+      description:
+        'Bentuk logo "UI" dan "IW" melambangkan inovatif yang menciptakan perspektif dan kreasi yang unik',
     },
   ];
 
@@ -56,7 +61,7 @@ const LogoPhilosophy = () => {
                       className="object-contain"
                     />
                   </div>
-                  <div className="font-visby text-sm md:text-xl text-center bg-gradient-to-br from-secondary-3 to-secondary-1 text-white px-8  rounded-2xl py-4 md:py-8">
+                  <div className="font-primary font-semibold text-sm md:text-xl text-center bg-gradient-to-br from-secondary-3 to-secondary-1 text-white px-8  rounded-2xl py-4 md:py-8">
                     <p>{description}</p>
                   </div>
                 </div>

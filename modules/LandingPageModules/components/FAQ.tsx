@@ -8,24 +8,34 @@ import {
 const FAQ = () => {
   const FAQContent = [
     {
-      question: "Apa itu UI Innovation War?",
+      question: "Siapa saja yang bisa mengikuti lomba BCC?",
       answer:
-        "Our flagship product combines cutting-edge technology with sleek design. Built with premium materials, it offers unparalleled performance and reliability.",
+        "Lomba BCC terbuka untuk seluruh mahasiswa aktif (D3/D4/S1) dengan usia maksimal 25 tahun, yang dapat dibuktikan dengan kartu tanda mahasiswa.",
     },
     {
-      question: "Apa itu UI Innovation War?",
+      question: "Apakah lomba ini hanya untuk mahasiswa di Jabodetabek?",
       answer:
-        "Our flagship product combines cutting-edge technology with sleek design. Built with premium materials, it offers unparalleled performance and reliability.",
+        "Tidak, lomba ini terbuka untuk peserta dari seluruh wilayah. Namun, untuk tahap final (Pitching Deck), peserta wajib hadir secara offline di lokasi yang ditentukan, yaitu di sekitar Jakarta.",
     },
     {
-      question: "Apa itu UI Innovation War?",
-      answer:
-        "Our flagship product combines cutting-edge technology with sleek design. Built with premium materials, it offers unparalleled performance and reliability.",
+      question: "Berapa biaya pendaftaran lomba BCC?",
+      answer: "Biaya pendaftaran sebesar Rp150.000 per tim.",
     },
     {
-      question: "Apa itu UI Innovation War?",
+      question: "Apakah bisa mendaftar secara individu?",
       answer:
-        "Our flagship product combines cutting-edge technology with sleek design. Built with premium materials, it offers unparalleled performance and reliability.",
+        "Tidak bisa, lomba BCC UI Innovation War hanya bisa diikuti oleh tim yang terdiri dari 2-3 orang dengan 1 orang sebagai ketua tim.",
+    },
+    {
+      question:
+        "Apakah anggota tim boleh berasal dari universitas yang berbeda?",
+      answer:
+        "Boleh, tidak ada ketentuan anggota tim harus berasal dari universitas yang sama.",
+    },
+    {
+      question: "Apakah peserta akan mendapatkan pembinaan dalam menyusun BCC?",
+      answer:
+        "Ya, tim yang lolos ke tahap final akan mendapatkan mentoring dari para mentor berpengalaman.",
     },
   ];
 
