@@ -8,7 +8,7 @@ type HeroProps = {
 
 const Hero = ({ onButtonClick }: HeroProps) => {
   return (
-    <main className="relative flex flex-col min-h-screen items-center justify-center lg:overflow-hidden ">
+    <main className="relative flex flex-col min-h-screen items-center justify-center lg:overflow-hidden max-sm:pt-30 max-[1440px]:pt-36">
       {/* Desktop Object */}
       <div className="absolute -top-24 -z-40 hidden lg:block -left-14 w-5xl mx-auto max-w-screen h-[72rem] ">
         <Image src={"/landing-hero/object-1.svg"} alt="object" fill />
@@ -47,10 +47,10 @@ const Hero = ({ onButtonClick }: HeroProps) => {
 
         {/* Right Side - Text Content */}
         <div className="w-full lg:w-3/5 flex flex-col justify-center space-y-6 text-center lg:text-left">
-          <h1 className="text-h4 sm:text-3xl lg:text-5xl font-bold leading-tight text-primary-1">
+          <h1 className="font-primary text-xl lg sm:text-3xl lg:text-5xl font-bold leading-tight text-primary-1">
             What is UI Innovation War?
           </h1>
-          <p className="font-primary font-medium text-sm sm:text-base lg:text-lg text-secondary-2 text-s7">
+          <p className="font-primary font-medium text-sm sm:text-base lg:text-lg text-secondary-2">
             UI Innovation War adalah wadah penyaluran intelektualitas dan
             pemikiran kritis dari pelajar dan mahasiswa melalui media kompetisi
             studi kasus bisnis dan perancangan bisnis untuk menghasilkan
