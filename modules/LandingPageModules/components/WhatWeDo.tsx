@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhatWeDo = () => {
   return (
-    <main className="flex flex-col min-h-screen items-center py-12 sm:py-24 relative">
+    <main className="min-h-screen pb-12 flex flex-col items-center py-12 sm:py-24 relative">
       <div className="absolute top-1/2 -translate-y-1/2 -z-40 block w-full h-[144rem] overflow-hidden">
         <Image
           src={"/landing-hero/object-4.svg"}
@@ -63,9 +63,19 @@ const WhatWeDo = () => {
               />
             </div>
           </div>
+          <div className="sm:hidden max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
+            <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black">
+              <Image
+                src="/documentation/3.jpg"
+                alt="5"
+                width={1000}
+                height={1000}
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
         </div>
-
-        <div className="max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
+        <div className="hidden sm:block max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
           <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black">
             <Image
               src="/documentation/3.jpg"
