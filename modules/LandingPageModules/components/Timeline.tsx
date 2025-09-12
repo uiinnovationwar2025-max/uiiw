@@ -10,69 +10,61 @@ const events = [
   },
 
   {
-    eventName: "Opening + Case Distribution MCC",
-    eventDate: <>15 September 2025</>,
-  },
-  {
-    eventName: "Open Registration BPC, dan BCC",
-    eventDate: <>21 September - 12 Oktober 2025</>,
+    eventName: "Opening & Case Distribution MCC",
+    eventDate: <>24 September 2025</>,
   },
   {
     eventName: "Submission MCC",
     eventDate: <>25 - 27 September 2025</>,
   },
   {
-    eventName: "DUWI (Workshop, Talkshow, and Campus Tour)",
+    eventName: "Open Registration BPC, dan BCC",
+    eventDate: <>September - Oktober 2025</>,
+  },
+  {
+    eventName: "Discover UI with Innovators (DUWI)",
     eventDate: <>27 September 2025</>,
   },
   {
-    eventName: "Pengumuman MCC",
+    eventName: "MCC Winner Announcement",
     eventDate: <>2 Oktober 2025</>,
   },
 
   {
-    eventName: "Case Reveal BPC dan BCC",
-    eventDate: <>20 Oktober 2025</>,
+    eventName: "Opening & Case Reveal BPC dan BCC",
+    eventDate: <>Oktober 2025</>,
   },
   {
-    eventName: "Submission BMC dan Essay",
-    eventDate: <>20 - 26 Oktober 2025</>,
+    eventName: "Submission BPC & BCC",
+    eventDate: <>Oktober 2025</>,
   },
   {
-    eventName: "Penilaian BMC dan Essay",
-    eventDate: <>27 Oktober - 2 November 2025</>,
+    eventName: "Semi-finalist Announcement",
+    eventDate: <>November 2025</>,
   },
   {
-    eventName: "Pengumuman Semi Finalis",
-    eventDate: <>3 November 2025</>,
+    eventName: "Proposal Submission",
+    eventDate: <>November 2025</>,
   },
   {
-    eventName: "Submission Proposal",
-    eventDate: <>3 - 9 November 2025</>,
+    eventName: "Finalist Announcement",
+    eventDate: <>November 2025</>,
   },
   {
-    eventName: "Penilaian Proposal",
-    eventDate: <>10 - 16 November 2025</>,
-  },
-  {
-    eventName: "Pengumuman Finalis",
-    eventDate: <>17 November 2025</>,
-  },
-  {
-    eventName: "Submission Draft Pitch Deck",
-    eventDate: <>17 - 21 November 2025</>,
+    eventName: "Technical Meeting",
+    eventDate: <>November 2025</>,
   },
   {
     eventName: "Mentoring",
-    eventDate: <>22 November 2025</>,
+    eventDate: <>November 2025</>,
   },
   {
     eventName: "Submission Final Pitch Deck",
-    eventDate: <>22 - 26 November 2025</>,
+    eventDate: <>November 2025</>,
   },
   {
     eventName: "Pitching Day dan Awarding Night",
-    eventDate: <>29 November 2025</>,
+    eventDate: <>November 2025</>,
   },
 ];
 

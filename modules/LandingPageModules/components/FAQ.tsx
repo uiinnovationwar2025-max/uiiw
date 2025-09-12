@@ -8,6 +8,10 @@ import {
 const FAQ = () => {
   const FAQContent = [
     {
+      question: "Siapa saja yang bisa mengikuti lomba BPC?",
+      answer: "Lomba BPC terbuka untuk seluruh siswa/i SMA/MA Sederajat.",
+    },
+    {
       question: "Siapa saja yang bisa mengikuti lomba BCC?",
       answer:
         "Lomba BCC terbuka untuk seluruh mahasiswa aktif (D3/D4/S1) dengan usia maksimal 25 tahun, yang dapat dibuktikan dengan kartu tanda mahasiswa.",
@@ -18,22 +22,28 @@ const FAQ = () => {
         "Tidak, lomba ini terbuka untuk peserta dari seluruh wilayah. Namun, untuk tahap final (Pitching Deck), peserta wajib hadir secara offline di lokasi yang ditentukan, yaitu di sekitar Jakarta.",
     },
     {
+      question: "Berapa biaya pendaftaran lomba BPC?",
+      answer:
+        "Pendaftaran untuk tahap pertama gratis. Jika tim lolos ke tahap Semifinal, biaya pendaftaran sebesar 100 ribu rupiah per tim berlaku.",
+    },
+    {
       question: "Berapa biaya pendaftaran lomba BCC?",
       answer: "Biaya pendaftaran sebesar Rp150.000 per tim.",
     },
     {
       question: "Apakah bisa mendaftar secara individu?",
       answer:
-        "Tidak bisa, lomba BCC UI Innovation War hanya bisa diikuti oleh tim yang terdiri dari 2-3 orang dengan 1 orang sebagai ketua tim.",
+        "Tidak bisa, lomba BCC & BPC UI Innovation War hanya bisa diikuti oleh tim yang terdiri dari 2-3 orang dengan 1 orang sebagai ketua tim.",
     },
     {
       question:
-        "Apakah anggota tim boleh berasal dari universitas yang berbeda?",
+        "Apakah anggota tim boleh berasal dari universitas/sekolah yang berbeda?",
       answer:
-        "Boleh, tidak ada ketentuan anggota tim harus berasal dari universitas yang sama.",
+        "Boleh, tidak ada ketentuan anggota tim harus berasal dari universitas/sekolah yang sama.",
     },
     {
-      question: "Apakah peserta akan mendapatkan pembinaan dalam menyusun BCC?",
+      question:
+        "Apakah peserta akan mendapatkan pembinaan dalam menyusun BPC/BCC?",
       answer:
         "Ya, tim yang lolos ke tahap final akan mendapatkan mentoring dari para mentor berpengalaman.",
     },

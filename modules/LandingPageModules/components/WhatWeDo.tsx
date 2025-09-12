@@ -55,7 +55,7 @@ const WhatWeDo = () => {
             </div>
             <div className=" w-3/5 h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black">
               <Image
-                src="/documentation/5.jpg"
+                src="/documentation/7.jpg"
                 alt="4"
                 width={1000}
                 height={1000}
@@ -66,7 +66,7 @@ const WhatWeDo = () => {
           <div className="sm:hidden max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
             <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black">
               <Image
-                src="/documentation/3.jpg"
+                src="/documentation/8.jpg"
                 alt="5"
                 width={1000}
                 height={1000}
@@ -78,7 +78,7 @@ const WhatWeDo = () => {
         <div className="hidden sm:block max-sm:w-full w-1/3 h-[33.25rem] max-sm:h-32 ">
           <div className="w-full h-full max-sm:border-4 border-8 border-secondary-2 overflow-hidden rounded-3xl bg-black">
             <Image
-              src="/documentation/3.jpg"
+              src="/documentation/8.jpg"
               alt="5"
               width={1000}
               height={1000}
