@@ -18,8 +18,8 @@ const events = [
     eventDate: <>25 - 27 September 2025</>,
   },
   {
-    eventName: "Open Registration BPC, dan BCC",
-    eventDate: <>September - Oktober 2025</>,
+    eventName: "Open Registration BPC & BCC",
+    eventDate: <>September - October 2025</>,
   },
   {
     eventName: "Discover UI with Innovators (DUWI)",
@@ -27,16 +27,16 @@ const events = [
   },
   {
     eventName: "MCC Winner Announcement",
-    eventDate: <>2 Oktober 2025</>,
+    eventDate: <>2 October 2025</>,
   },
 
   {
     eventName: "Opening & Case Reveal BPC dan BCC",
-    eventDate: <>Oktober 2025</>,
+    eventDate: <>October 2025</>,
   },
   {
     eventName: "Submission BPC & BCC",
-    eventDate: <>Oktober 2025</>,
+    eventDate: <>October 2025</>,
   },
   {
     eventName: "Semi-finalist Announcement",
