@@ -27,7 +27,7 @@ const menus: Menu[] = [
     value: "mcc",
     title: "Mini Case Competition",
     description:
-      "Mini Case Competition merupakan kegiatan pre-event daring pada UI Innovation War 2025 yang berperan dalam menarik minat mahasiswa S1 untuk berpartisipasi dalam Business Case Competition dari UI Innovation War 2025. Tujuannya adalah untuk mengasah kemampuan peserta dalam memahami dan menyelesaikan tantangan bisnis nyata (real case) yang diberikan oleh case collaborator. Peserta akan diberikan waktu pengerjaan kasus selama 72 jam, setelah itu akan diumumkan pemenangnya saat acara Discover UI with Innovators DUWI 2025.",
+      "Mini Case Competition merupakan kegiatan pre-event daring pada UI Innovation War 2025 yang berperan dalam menarik minat mahasiswa S1 untuk berpartisipasi dalam Business Case Competition dari UI Innovation War 2025. Tujuannya adalah untuk mengasah kemampuan peserta dalam memahami dan menyelesaikan tantangan bisnis nyata (real case) yang diberikan oleh case collaborator. Peserta akan diberikan waktu pengerjaan kasus selama 72 jam.",
     url: "https://bit.ly/OpregMCCUIIW2025",
     opreg: "Pendaftaran dibuka 12 September 2025",
   },
