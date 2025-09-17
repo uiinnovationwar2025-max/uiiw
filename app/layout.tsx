@@ -35,8 +35,30 @@ const questrial = Questrial({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://uiinnovationwar.com"),
   title: "UI Innovation War 2025",
   description: "UI Innovation War 2025 Official Website",
+  openGraph: {
+    title: "UI Innovation War 2025",
+    description: "UI Innovation War 2025 Official Website",
+    url: new URL("https://uiinnovationwar.com"),
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "UI Innovation War 2025",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UI Innovation War 2025",
+    description: "UI Innovation War 2025 Official Website",
+    images: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({
