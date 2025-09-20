@@ -6,7 +6,7 @@ import Image from "next/image";
 const events = [
   {
     eventName: "Open Registration MCC",
-    eventDate: <>12 - 19 September 2025</>,
+    eventDate: <>12 - 23 September 2025</>,
   },
 
   {
@@ -23,7 +23,7 @@ const events = [
   },
   {
     eventName: "Discover UI with Innovators (DUWI)",
-    eventDate: <>27 September 2025</>,
+    eventDate: <>September 2025</>,
   },
   {
     eventName: "MCC Winner Announcement",

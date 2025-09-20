@@ -35,7 +35,7 @@ const OurPrograms = () => {
       img: "/duwi.png",
       name: "DUWI",
       description:
-        "Discover UI With Innovators (DUWI) 2025 adalah sebuah acara luring yang menjadi bagian dari rangkaian UI Innovation War 2025. Dengan tema “Inspiring Future Leaders to Compete and Create”, acara ini bertujuan memberikan wawasan dan inspirasi mengenai dunia kompetisi bisnis bagi siswa SMA/SMK di seluruh Indonesia, serta bermanfaat bagi mahasiswa.",
+        "Discover UI With Innovators (DUWI) 2025 adalah sebuah acara talkshow yang menjadi bagian dari rangkaian UI Innovation War 2025. Dengan tema “Inspiring Future Leaders to Compete and Create”, acara ini bertujuan memberikan wawasan dan inspirasi mengenai dunia kompetisi bisnis bagi siswa SMA/SMK di seluruh Indonesia, serta bermanfaat bagi mahasiswa.",
       opreg: "Coming Soon",
     },
     {
