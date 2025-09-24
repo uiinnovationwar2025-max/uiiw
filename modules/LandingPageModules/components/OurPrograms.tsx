@@ -40,7 +40,7 @@ const OurPrograms = () => {
     },
     {
       id: 2,
-      img: "/mcc.png",
+      img: "/mcc-completed.png",
       name: "MCC",
       description:
         "Mini Case Competition merupakan kegiatan pre-event daring pada UI Innovation War 2025 yang berperan dalam menarik minat mahasiswa S1 untuk berpartisipasi dalam Business Case Competition dari UI Innovation War 2025. Tujuannya adalah untuk mengasah kemampuan peserta dalam memahami dan menyelesaikan tantangan bisnis nyata (real case) yang diberikan oleh case collaborator. Peserta akan diberikan waktu pengerjaan kasus selama 72 jam, setelah itu akan diumumkan pemenangnya saat acara Discover UI with Innovators DUWI 2025.",
@@ -52,7 +52,7 @@ const OurPrograms = () => {
       name: "BPC",
       description:
         "Business Plan Competition (BPC) merupakan kompetisi rencana bisnis yang diselenggarakan untuk siswa Sekolah Menengah Atas (SMA). Tujuannya adalah untuk mendorong kreativitas, inovasi, dan semangat kewirausahaan di kalangan remaja. BPC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BPC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
-      opreg: "Coming Soon ",
+      opreg: "Coming Soon",
     },
     {
       id: 4,
@@ -60,7 +60,7 @@ const OurPrograms = () => {
       name: "BCC",
       description:
         "Business Case Competition (BCC) merupakan kompetisi studi kasus bisnis yang dilakukan oleh tim-tim mahasiswa dalam bersaing untuk merancang solusi bisnis yang inovatif dan mempresentasikannya di hadapan dewan juri. BCC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BCC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
-      opreg: "Coming Soon ",
+      opreg: "Coming Soon",
     },
   ];
 
