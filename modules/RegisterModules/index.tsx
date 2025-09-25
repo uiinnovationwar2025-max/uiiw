@@ -36,8 +36,8 @@ const menus: Menu[] = [
     title: "Business Plan Competition",
     description:
       "Business Plan Competition (BPC) merupakan kompetisi rencana bisnis yang diselenggarakan untuk siswa Sekolah Menengah Atas (SMA). Tujuannya adalah untuk mendorong kreativitas, inovasi, dan semangat kewirausahaan di kalangan remaja. BPC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BPC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
-    url: "",
-    opreg: "Coming Soon",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSeDxnJ3XYvOzVLHOSFhR7mtfjjpLhWssR8MB1D8LX_mJ9hQHQ/viewform?usp=sharing&ouid=105661591994519728377",
+    opreg: "",
   },
   {
     value: "bcc",

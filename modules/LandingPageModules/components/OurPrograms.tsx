@@ -48,11 +48,11 @@ const OurPrograms = () => {
     },
     {
       id: 3,
-      img: "/bpc.png",
+      img: "/bpc-nowplaying.png",
       name: "BPC",
       description:
         "Business Plan Competition (BPC) merupakan kompetisi rencana bisnis yang diselenggarakan untuk siswa Sekolah Menengah Atas (SMA). Tujuannya adalah untuk mendorong kreativitas, inovasi, dan semangat kewirausahaan di kalangan remaja. BPC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BPC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
-      opreg: "Coming Soon",
+      opreg: "",
     },
     {
       id: 4,
