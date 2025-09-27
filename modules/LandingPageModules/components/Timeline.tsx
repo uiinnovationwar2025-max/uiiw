@@ -23,7 +23,7 @@ const events = [
   },
   {
     eventName: "Discover UI with Innovators (DUWI)",
-    eventDate: <>September 2025</>,
+    eventDate: <>5 October 2025</>,
   },
   {
     eventName: "MCC Winner Announcement",

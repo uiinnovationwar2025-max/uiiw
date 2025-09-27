@@ -32,11 +32,11 @@ const OurPrograms = () => {
   const programs: Program[] = [
     {
       id: 1,
-      img: "/duwi.png",
+      img: "/duwi-nowplaying.png",
       name: "DUWI",
       description:
         "Discover UI With Innovators (DUWI) 2025 adalah sebuah acara talkshow yang menjadi bagian dari rangkaian UI Innovation War 2025. Dengan tema “Inspiring Future Leaders to Compete and Create”, acara ini bertujuan memberikan wawasan dan inspirasi mengenai dunia kompetisi bisnis bagi siswa SMA/SMK di seluruh Indonesia, serta bermanfaat bagi mahasiswa.",
-      opreg: "Coming Soon",
+      opreg: "",
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ const OurPrograms = () => {
       name: "MCC",
       description:
         "Mini Case Competition merupakan kegiatan pre-event daring pada UI Innovation War 2025 yang berperan dalam menarik minat mahasiswa S1 untuk berpartisipasi dalam Business Case Competition dari UI Innovation War 2025. Tujuannya adalah untuk mengasah kemampuan peserta dalam memahami dan menyelesaikan tantangan bisnis nyata (real case) yang diberikan oleh case collaborator. Peserta akan diberikan waktu pengerjaan kasus selama 72 jam, setelah itu akan diumumkan pemenangnya saat acara Discover UI with Innovators DUWI 2025.",
-      opreg: "",
+      opreg: "Completed",
     },
     {
       id: 3,
@@ -56,11 +56,11 @@ const OurPrograms = () => {
     },
     {
       id: 4,
-      img: "/bcc.png",
+      img: "/bcc-nowplaying.png",
       name: "BCC",
       description:
         "Business Case Competition (BCC) merupakan kompetisi studi kasus bisnis yang dilakukan oleh tim-tim mahasiswa dalam bersaing untuk merancang solusi bisnis yang inovatif dan mempresentasikannya di hadapan dewan juri. BCC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BCC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
-      opreg: "Coming Soon",
+      opreg: "",
     },
   ];
 

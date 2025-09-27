@@ -20,8 +20,8 @@ const menus: Menu[] = [
     title: "Discover UI with Innovators (DUWI)",
     description:
       'Discover UI With Innovators (DUWI) 2025 adalah sebuah acara talkshow yang menjadi bagian dari rangkaian UI Innovation War 2025. Dengan tema "Inspiring Future Leaders to Compete and Create", acara ini bertujuan memberikan wawasan dan inspirasi mengenai dunia kompetisi bisnis bagi siswa SMA/SMK di seluruh Indonesia, serta bermanfaat bagi mahasiswa.',
-    url: "",
-    opreg: "Coming Soon",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSf1xq_KStAQH3ETFff8VuRw2kRaLFPTHUVF9iveQJRzP-TvuA/viewform?usp=sharing&ouid=105661591994519728377",
+    opreg: "",
   },
   {
     value: "mcc",
@@ -44,8 +44,8 @@ const menus: Menu[] = [
     title: "Business Case Competition",
     description:
       "Business Case Competition (BCC) merupakan kompetisi studi kasus bisnis yang dilakukan oleh tim-tim mahasiswa dalam bersaing untuk merancang solusi bisnis yang inovatif dan mempresentasikannya di hadapan dewan juri. BCC dilengkapi dengan mentoring yang merupakan kegiatan pelatihan khusus bagi para finalis BCC untuk memberikan performa yang maksimal dalam final pitch deck. Kegiatan mentoring terdiri atas pemberian evaluasi, saran, dan kritik dari mentor terhadap finalis. Pelaksanaan mentoring dilakukan secara daring dengan sistem breakout room.",
-    url: "",
-    opreg: "Coming Soon",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfbNJVgDdB7Sadmiq7WuHMf34Y5nsiDN0bgVrYn0LuJx5YS3A/viewform?usp=sharing&ouid=105661591994519728377",
+    opreg: "",
   },
 ];
 
