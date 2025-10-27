@@ -54,7 +54,7 @@ const Sponsor = () => {
   return (
     <main className="min-h-screen flex flex-col items-center py-12 sm:py-24">
       {/* Heading */}
-      <div className="my-7 lg:my-13 w-full font-visby text-4xl leading-10 md:text-7xl lg:leading-16 text-center text-primary-1">
+      <div className="my-4 lg:my-8 w-full font-visby text-4xl leading-10 md:text-7xl lg:leading-16 text-center text-primary-1">
         Our <span className="font-primary">Partners</span>
       </div>
 
