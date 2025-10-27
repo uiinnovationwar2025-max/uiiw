@@ -7,6 +7,7 @@ const Hero = () => {
     <>
       <main className="relative flex gap-12 flex-col min-h-screen  text-center items-center justify-center overflow-hidden">
         {/* Desktop Object */}
+        <p>teessttt</p>
         <div className="absolute -top-24 hidden lg:block -left-14 w-5xl mx-auto max-w-screen h-[72rem] ">
           <Image src={"/landing-hero/object-1.svg"} alt="object" fill />
         </div>
