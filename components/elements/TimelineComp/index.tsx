@@ -45,7 +45,7 @@ const TimelineBox = ({ event, className = "" }: TimelineBoxProps) => {
         </h1>
         <img src="/timeline.svg" alt="vector" />
       </div>
-      <div className="w-[120px] md:w-[240px] flex items-center justify-center relative h-8 md:h-14 md:mx-0 md:px-8 font-bold text-[9px] md:text-sm text-basic">
+      <div className="w-[160px] md:w-[240px] flex items-center justify-center relative h-8 md:h-14 md:mx-0 md:px-8 font-bold text-[9px] md:text-sm text-basic">
         <div className="rounded-full w-full h-full p-0.5">
           <div className="text-center bg-gradient-to-b from-[#307693] to-[#00567A] border-3 md:border-6 border-secondary-2 rounded-full w-full h-full flex justify-center items-center">
             {event.eventDate}

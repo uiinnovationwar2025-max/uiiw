@@ -2,12 +2,8 @@ import {
   Card,
   CardHeader,
   CardTitle,
-  CardContent,
   CardDescription,
-  CardAction,
-  CardFooter,
 } from "@/components/ui/card";
-import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
 const CardComponent = ({
