@@ -1,4 +1,12 @@
+"use client";
+
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Sponsor = () => {
   const companyPartners = [
@@ -196,7 +204,7 @@ const Sponsor = () => {
         <h2 className="text-3xl md:text-5xl font-visby text-primary-1 text-center mb-16">
           Sponsored By
         </h2>
-        <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center items-center gap-4 md:gap-16">
+        <div className=" flex flex-wrap justify-center items-center gap-4 md:gap-16">
           {sponsors.map((sponsor, index) => (
             <Image
               key={index}
@@ -215,7 +223,7 @@ const Sponsor = () => {
         <h2 className="text-3xl md:text-5xl font-visby text-primary-1 text-center mb-16">
           Media Partner
         </h2>
-        <div className="grid grid-cols-3 md:flex md:flex-wrap justify-center items-center gap-4 md:gap-12">
+        <div className="hidden md:flex md:flex-wrap justify-center items-center gap-4 md:gap-12">
           {mediaPartners.map((partner, index) => (
             <Image
               key={index}
@@ -226,6 +234,24 @@ const Sponsor = () => {
               className="object-contain"
             />
           ))}
+        </div>
+        <div className="md:hidden overflow-hidden relative">
+          <div className="flex w-max animate-marquee whitespace-nowrap space-x-6">
+            {mediaPartners.concat(mediaPartners).map((partner, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 flex items-center justify-center"
+              >
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={120}
+                  height={60}
+                  className="object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </main>

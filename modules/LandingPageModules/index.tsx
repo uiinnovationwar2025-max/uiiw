@@ -12,7 +12,7 @@ const LandingPageModules = () => {
       <OurPrograms />
       <Timeline />
       <WhatWeDo />
-      <Sponsor/>
+      <Sponsor />
       <FAQ />
     </>
   );
