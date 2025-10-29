@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhatWeDo = () => {
   return (
-    <main className="min-h-screen pb-12 flex flex-col items-center py-12 sm:py-24 relative">
+    <main className=" max-md:mb-36 flex flex-col items-center relative">
       <div className="absolute top-1/2 -translate-y-1/2 -z-40 block w-full h-[144rem] overflow-hidden">
         <Image
           src={"/landing-hero/object-4.svg"}
