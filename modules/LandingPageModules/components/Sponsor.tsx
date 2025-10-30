@@ -1,12 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 const Sponsor = () => {
   const companyPartners = [

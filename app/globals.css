@@ -172,11 +172,9 @@
   }
 
   .animate-marquee {
-    animation: marquee 30s linear infinite;
+    animation: marquee 50s linear infinite;
   }
-s
-
-  .text-h1 {
+  s .text-h1 {
     @apply text-6xl font-visby leading-14;
   }
 
