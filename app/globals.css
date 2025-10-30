@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --primary-1: #0061e0;
+  --primary-1: #0157d8;
   --primary-2: #2a96f0;
   --primary-3: #53caff;
   --primary-4: #a0ddfd;
@@ -162,7 +162,19 @@
 }
 
 @layer utilities {
-  .text-h1 {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 50s linear infinite;
+  }
+  s .text-h1 {
     @apply text-6xl font-visby leading-14;
   }
 
