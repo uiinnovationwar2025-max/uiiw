@@ -162,7 +162,19 @@
 }
 
 @layer utilities {
-  .text-h1 {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 50s linear infinite;
+  }
+  s .text-h1 {
     @apply text-6xl font-visby leading-14;
   }
 
